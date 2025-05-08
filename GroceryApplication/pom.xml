@@ -73,10 +73,11 @@
 			<version>1.18.28</version>
 		</dependency>
 		
-		<dependency>
-    <groupId>org.kohsuke</groupId>
-    <artifactId>github-api</artifactId>
-    <version>1.123</version> <!-- Use the latest version -->
+	<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+<dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
 </dependency>
 
 

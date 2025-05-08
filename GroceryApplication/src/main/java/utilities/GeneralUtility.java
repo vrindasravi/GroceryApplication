@@ -12,7 +12,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GeneralUtility {
-	 private WebDriver driver;
+
+	 private static WebDriver driver;
 	    private WebDriverWait wait;
 
 	public String selectDropdownWithIndex(WebElement element, int indexNumber) {
@@ -45,7 +46,7 @@ public class GeneralUtility {
     }
     
     // Utility: Check if element is displayed
-    public boolean isElementDisplayed(By locator) {
+    public static boolean isElementDisplayed(WebDriver driver,By locator) {
         try {
             WebElement element = driver.findElement(locator);
             return element.isDisplayed();
